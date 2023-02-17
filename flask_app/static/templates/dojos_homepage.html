@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body style="display:flex;justify-content: space-around;">
+    <div>
+        <form action="/add_new_dojo" method="POST">
+            <label for="name">Add new Dojo</label>
+            <input type="text" name="name">
+        </form> 
+    </div>
+    
+        <div>
+            <h1>Dojos</h1>
+            <div style="border: 2px solid black;width: 300px;">
+            {%for one_dojo in dojos%}
+            <a href="/display_all_ninjas/{{one_dojo.id}}" style="display:block">{{one_dojo.name}}</a>
+
+                {%endfor%}
+            </div>
+            
+            <a href="/create_new_ninja">Add a ninja!</a>
+
+        </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

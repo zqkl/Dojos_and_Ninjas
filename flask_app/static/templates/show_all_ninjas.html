@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All ninjas</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        {%for one_ninja in ninjas%}
+        <tr>
+            <td>{{one_ninja.first_name}}</td>
+            <td>{{one_ninja.last_name}}</td>
+            <td>{{one_ninja.age}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
